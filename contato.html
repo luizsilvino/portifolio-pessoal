@@ -11,10 +11,6 @@
 
     <nav class="navbar">
 
-        <div class="logo">
-            Luiz
-        </div>
-
         <ul class="menu">
 
             <li>
@@ -39,26 +35,55 @@
 
     <section class="contato">
 
-        <h1>Contato</h1>
+        <main>
 
-        <form>
+            <h1>Contato</h1>
 
-            <label>Nome</label>
-            <input type="text" class="form-control">
+            <form id="formContato">
 
-            <label>E-mail</label>
-            <input type="email" class="form-control">
+                <label for="nome">Nome:</label>
 
-            <label>Mensagem</label>
-            <textarea class="form-control"></textarea>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    class="form-control"
+                    required
+                    placeholder="Digite seu nome"
+                >
 
-            <button class="btn btn-primary">
-                Enviar
-            </button>
+                <label for="email">E-mail:</label>
 
-        </form>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                    placeholder="Digite seu E-mail"
+                >
+
+                <label for="mensagem">Mensagem:</label>
+
+                <textarea
+                    name="mensagem"
+                    id="mensagem"
+                    class="form-control"
+                    required
+                    placeholder="Digite sua mensagem"
+                ></textarea>
+
+                <button type="submit" id="btnWhatsapp" class="btn btn-primary">
+                    Enviar
+                </button>
+
+            </form>
+
+        </main>
 
     </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
